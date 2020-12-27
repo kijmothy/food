@@ -1,0 +1,308 @@
+html {   /*可以放在最頂端，為了對應rem的設定*/
+	font-size: 16px;
+}
+body {
+	font-family: Arial, "sans-serif", "微軟正黑體";
+	background: #C1C1C1;
+	overflow-x: hidden;/*防止X軸超過*/
+}
+a {
+	text-decoration: none;
+}
+h1, h2, h3, h4, h5, h6 {
+	line-height: 1.3
+}
+p {
+	color: #434343;
+	font-size: 1em;
+}
+/*-------------------------*/
+.bgc-w {
+	background: white;
+}
+.bgc-bl {
+	background: black;
+}
+.bgc-bl-a {
+	background: rgba(0,0,0,0.71)
+}
+.bgc-br {
+	background: #926B54;
+}
+.bgc-br-d {
+	background: #573C25;
+}
+/*fc-------------------------*/
+.fc-w {
+	color: white;
+}
+.fc-bl {
+	color: black;
+}
+.fc-bl-a {
+	color: rgba(0,0,0,0.71)
+}
+.fc-br {
+	color: #926B54;
+}
+.fc-br-d {
+	color: #573C25;
+}
+/*-------------------------*/
+.box {
+	width: 100%;
+	max-width: 1140px;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin: 0 auto;
+}
+.row {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	flex-wrap: wrap;/*超出界線必要時會自動換行*/
+}
+/*搜尋-------------------------*/
+.search {
+	z-index: 99999;
+	height: 100px;
+	top: -200px;
+	left: 0;
+	-webkit-transition-duration: 1s;
+	transition-duration: 1s;/*過度補間動畫-時間長度*/
+}
+.search form {
+	position: relative;
+	z-index: 1;
+}
+.search input {
+	width: 100%;
+	border: thin solid #E4E4E4;
+	border-radius: 10px;/*圓角*/
+	height: 50px;
+	color: yellow;
+	padding: 0 20px;
+	font-size: 18px;
+	background: transparent;
+}
+.search input::placeholder {/*::後面才能接屬性*/
+ color: white;
+ font-size: 20px;
+ font-weight:900
+}
+#closeBtn {
+	/*position: absolute;已經設定class*/
+	top: 50%;
+	right: 30px;
+	color: white;
+	margin-top: -10px;
+	font-size: 20px;
+}
+/*連結---------------------------------*/
+a.logo {
+	width: 90px;
+}
+header {
+	z-index: 9999;
+}
+.navbar-collapse {
+	-webkit-flex-basis: 100%;
+	-webkit-flex-grow: 1;
+	flex-basis: 100%;
+	flex-grow: 1;
+}
+.nav-link {
+	color: white;
+	font-size: 1.2rem;/*root根元素，rem直接對應html設定影響*/
+	padding-left: 0.5rem;
+	padding-right: 0.5rem;
+}
+/*home-----------------------*/
+.social-info {
+	font-size: 36px;
+	top: 50%;
+	right: 50px;
+	-webkit-flex-direction: column;
+	flex-direction: column;
+	z-index: 99;
+}
+.social-info a {
+	color: black;
+	margin-bottom: 30px;
+}
+.slides {
+	width: 100%;
+	height: 100vh;
+	z-index: 11;
+}
+.bg-img {
+	background-size: cover;
+	background-position: center;
+}
+.slides:after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: calc(50% - 112px);/*-前後一定要有空格*/
+	height: 100vh;
+	background: rgba(0,0,0,0.50);
+	z-index: 1
+}
+.h-100 {
+	height: 100%;
+}
+.header-left h2 {
+	font-size: 2rem;
+	font-weight: bold;
+	color: white;
+}
+.header-left p {
+	line-height: 2;
+	font-size: 1.1rem;
+	color: white;
+}
+/*about--------------------------------*/
+section img {
+	width: 100%;
+}
+.about-box {
+	box-shadow: 0 10px 15px rgba(0,0,0,0.5);
+}
+.section-title {
+	margin: 50px 0;
+	font-size: 3rem;
+	font-weight: bold;
+	color: rgba(155,0,1,1.00);
+}
+.section-title h2:before {
+	content: "↗";
+	font-size: 2rem;
+	color: #a52124;
+	margin-right: 2px
+}
+.section-title h2:after {
+	content: "↖";
+	font-size: 2rem;
+	color: #a52124;
+	margin-left: 2px
+}
+#about h3 {
+	font-size: 2rem;
+	color: #434343;
+	font-weight: bold;
+}
+#about p {
+	line-height: 1.7;
+	text-align: justify;
+	margin-top: 10px;
+}
+.about-bg:after {
+	content: "食鮮的信念";
+	position: absolute;
+	top: 50px;
+	left: 0;
+	font-size: 150px;
+	color: rgba(166,166,166,0.60);
+	font-weight: 900;
+}
+.about-bg:before {
+	content: "";
+	position: absolute;
+	top: 170px;
+	left: 10px;
+	width: 100%;
+	height: 80px;
+	background: url(../images/dot.png) no-repeat;
+	z-index: 1;
+}
+#sort:before {
+	content: "精選食材";
+	position: absolute;
+	top: 50%;
+	right: -10%;
+	font-size: 150px;
+	color: rgba(166,166,166,0.60);
+	font-weight: 900;
+	-webkit-transform: rotate(90deg);
+	transform: rotate(90deg);
+	/*transform: rotate(-90deg);*/
+	z-index: -1
+}
+.pro-box{
+	position: relative;
+	padding: 40px 30px 20px;/*上右下左*/
+}
+.pro-box:after{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: calc(100% - 80px);
+	height: 100%;
+	background: white;
+	box-shadow: 0 10px 15px raba(0,0,0,0.5);
+	z-index: -1;
+	border-radius: 5px;
+}
+.pro-info{
+	-webkit-align-items: center;
+	align-items: center;
+	-webkit-justify-content: space-between;
+	justify-content: space-between;/*均分空間*/
+	padding-top: 1em;
+}
+.pro-name{
+	width: 50%;
+	font-size: 1.2rem;
+}
+.pro-label{
+	width: 60px;
+	height: 60px;
+	background: #a52124;
+	color: white;
+	font-weight: 900;
+	text-align: center;
+	line-height: 60px;
+	border-radius: 50%;
+	font-size: 1.2rem;
+}
+.pro-box img{
+	border-top-right-radius: 5% 5%;
+	border-bottom-right-radius: 5% 5%;
+}
+.btn{
+	display: inline-block;
+	text-align: center;
+	font-size: 1.1rem;
+	padding: 1rem 0.75rem;
+}
+.more-btn{
+	min-width: 180px;
+	border: 1px solid #5F5F5F;
+	border-bottom-width: 3px;
+	background: #909090;
+	color: #FFFFFF
+}
+.more-btn span:before{
+	content: "→";
+	font-size: 1rem;
+	color: #a52124;
+	margin-right: 5px;
+}
+.more-btn:hover {
+	color: #a52124;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

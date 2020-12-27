@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="zh-Hant-Tw">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>首頁││食鮮日式料理</title>
+<!--css//////////////////////////////////////////////-->
+<link rel="stylesheet" href="css/reset.css" type="text/css">
+<link rel="stylesheet" href="css/all.css" type="text/css">
+<link rel="stylesheet" href="font/style.css" type="text/css">
+<link rel="stylesheet" href="css/style.css" type="text/css">
+<!--icon/////////////////////////////////////////////-->
+<link rel="icon" href="images/icon.png">
+<!--jq///////////////////////////////////////////////-->
+<script src="js/jquery-3.3.1.min.js" type="text/javascript"></script>
+</head>
+
+<body>
+<!--搜尋//////////////////////////-->
+<section class="search ds-flex al-it-c w100 ps-f bgc-bl">
+  <div class="box">
+    <div class="row"><!--決定框架的屬性-->
+      <div class="w100 ps-r p-rl-1">
+        <div id="closeBtn" class="ps-a"><i class="icon-cross"></i></div>
+        <!--i和span都是行內元素，div是塊級元素會上下排列-->
+        <form action="search.php" method="get" id="search-form">
+          <input type="search" placeholder="搜尋您需要的廚具" name="search" id="search">
+          <input type="submit" value="submit" class="ds-n">
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+<!--連結////////////////////////////-->
+<header class="bgc-bl-a ps-f w100">
+  <div class="box">
+    <div class="row"><!--決定框架的屬性-->
+      <div class="w100 p-rl-1">
+        <nav class="ds-flex al-it-c"> <a class="logo" href="index.html" title="點擊食鮮日式料理商標開啟首頁"> <img class="w100" src="images/logo.svg" alt="食鮮日式料理商標"> </a> 
+          <!--link選單///////////////////////-->
+          <div class="ds-flex navbar-collapse" id="menu">
+            <ul class="ds-flex m-l-auto">
+              <li><a class="nav-link" href="#home" title="前往首頁">首頁</a></li>
+              <li><a class="nav-link" href="#home" title="前往認識食鮮">認識食鮮</a></li>
+              <li><a class="nav-link" href="#home" title="前往精選食材">精選食材</a></li>
+              <li><a class="nav-link" href="#home" title="前往最新消息">最新消息</a></li>
+              <li><a class="nav-link" href="#home" title="前往食鮮位置">食鮮位置</a></li>
+              <li><a class="nav-link" href="#home" title="前往聯絡食鮮頁面留言區">聯絡食鮮</a></li>
+            </ul>
+            <div class="search-btn p-l-1"> <a href="#"> <i class="icon-search fc-w"></i></a> </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
+<!--圖片輪播//////////////////////////////-->
+<section id="home"> 
+  <!--社群圖示/////////////////////////////-->
+  <div class="ds-flex social-info ps-a"> <a href="#1" title="歡迎到食鮮的FB專業留言"><i class="icon-facebook2"></i></a> <a href="#2" title="歡迎到食鮮的IG看更多的產品"><i class="icon-instagram"></i></a> <a href="#3" title="歡迎到食鮮的youtube頻道收看影片"><i class="icon-youtube"></i></a> </div>
+  <!--輪播圖//////////////////////////////-->
+  <div class="slides ps-r bg-img" style="background-image:url(images/banner-3.png)">
+    <div class="box h-100">
+      <div class="row h-100 al-it-c">
+        <div class="w-33 ps-r p-r1-1" style="z-index: 3">
+          <div class="header-left">
+            <h2>來自大海的上乘滋味</h2>
+            <p>包含濃濃磯味的肥美生蠔，蝦蟹、鮑魚、貝類等多種海鮮的拼盤套餐，大海孕育的鮮甜原味，盡在其中，無須遠赴漁港，讓您平時也能輕鬆品享精緻海味。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!---關於//////////////////////////////////-->
+<section class="p-t-8" id="about">
+  <div class="box">
+    <div class="row al-it-c">
+      <div class="w-50 p-rl-1">
+        <div class="about-box"> <img src="images/pro8.png" alt="認識食鮮-壽司圖"> </div>
+      </div>
+      <div class="w-50 p-rl-1">
+        <div class="section-title">
+          <h2>認識食鮮</h2>
+        </div>
+        <div class="about-content">
+          <h3>品</h3>
+          <p>生活平衡、享樂有道，大海的恩賜滿足了口欲，慰勞身心。此區供應來自世界各地的上等海鮮，佐以香檳、白酒或清酒，倚身吧台與好友或師傅相談對飲，彷彿置身國外海畔小酒吧的愜意場景。美食、好酒與老友，盡享快意人生。</p>
+        </div>
+      </div>
+    </div>
+    <!--////////////////////////////////-->
+    <div class="about-bg ps-r">
+      <div class="row al-it-c p-t-15">
+        <div class="w-50 p-rl-1">
+          <h3>質</h3>
+          <p>快樂是這裡的重頭戲。豪邁澎湃的大份量食材，火侯微調、親自烹煮的趣味，眾樂樂歡愉加乘，大呼過癮。提供包括嚴選海鮮、菇類蔬菜等鍋物食材，以昆布熬煮的湯頭，健康無負擔之餘，提升海鮮原味，更增鮮甜。食材上桌同時，服務人員解說各種食材烹煮的流程與時間控制的拿捏，讓您方便烹煮，品嘗各種食材的最佳滋味。</p>
+        </div>
+        <div class="w-50 p-rl-1">
+          <div class="about-box"><img src="images/pro6.png" alt="認識食鮮-室內圖"> </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--分類//////////////////////////////////-->
+<section class="p-t-7 ps-r" id="sort">
+  <div class="box">
+    <div class="row">
+      <div class="w100 p-rl-1 section-title ta-c">
+        <h2>精選食材</h2>
+      </div>
+    </div>
+    <div class="row m-b-5">
+      <div class="w-33 ps-r p-rl-1">
+        <div class="pro-box"> <img src="images/pro1.png" alt="">
+          <div class="ds-flex pro-info">
+            <h6 class="pro-name">立吞美食</h6>
+            <p class="pro-label">新品</p>
+          </div>
+        </div>
+      </div>
+      <div class="w-33 ps-r p-rl-1">
+        <div class="pro-box"> <img src="images/pro4.png" alt="">
+          <div class="ds-flex pro-info">
+            <h6 class="pro-name">快意鮮味吧</h6>
+            <p class="pro-label">熱賣</p>
+          </div>
+        </div>
+      </div>
+      <div class="w-33 ps-r p-rl-1">
+        <div class="pro-box"> <img src="images/pro3.png" alt="">
+          <div class="ds-flex pro-info">
+            <h6 class="pro-name">炭道海鮮燒烤</h6>
+            <p class="pro-label">新品</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--///////////////////////////-->
+    <div class="ta-c"> 
+		<a class="btn more-btn" href="product.html" title="前往產品詳細內容介紹的頁面"> <span></span>產品詳細內容 </a> 
+	</div>
+  </div>
+</section>
+</body>
+</html>
